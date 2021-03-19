@@ -9,9 +9,10 @@ const app = function() {
         switchOff(game.btnHit);
         switchOff(game.btnStand);
         cardDeck();
-        addEvents();
+        addEvents(); 
         scoreBoard();
         reset();
+        hideStuff();
     }
 
     //Setting up the gameplay through the DOM and the game object
@@ -175,7 +176,7 @@ const app = function() {
         }
     };
 
-    //Logic for the sum of cards and calculating scores
+    //Logic for the sum of cards picked up
     function scorer(hand) {
         let total = 0;
         let ace = 0;
@@ -297,12 +298,27 @@ const app = function() {
         switchOn(game.btnDeal);
     };
 
-    //Ability for the player to reset the scores
+    //Ability for the player to reset the game
     function reset() {
         game.btnReset.on('click', function() {
             document.location.href = '';
         });
     };
+
+    //Displaying a welcome page with a button to click
+    function hideStuff() {
+        game.main.hide();
+        let welcome = $('<h1>');
+        welcome.text('Welcome to our BlackJack game').addClass('welcome');
+        $('body').append(welcome);
+        let playGame = $('<button>').text('Let\'s play!').addClass('hide');
+        welcome.append(playGame);
+        playGame.on('click', function() {
+            game.main.show();
+            welcome.hide();
+            playGame.hide();
+        })
+    }
 
 
     return {

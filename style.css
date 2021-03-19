@@ -1,8 +1,6 @@
-
 body {
     background-color: hsl(131, 20%, 50%);
 }
-
 
 .btn {
     display: inline-block;
@@ -91,4 +89,22 @@ body {
     font-size: 2em;
     margin: 15px 0;
     font-family: 'Space Mono', Helvetica;
+}
+
+.welcome {
+    font-family: 'Space Mono', Helvetica;
+    font-weight: 800;
+}
+
+.hide {
+    position: fixed;
+    text-align: center;
+    margin: 100px auto;
+    justify-content: left;
+    font-family: 'Space Mono', Helvetica;
+    padding: .375rem .75rem;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    left: 200px;
 }
