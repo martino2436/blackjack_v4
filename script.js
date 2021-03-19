@@ -304,7 +304,6 @@ const app = function() {
         });
     };
 
-    console.log('Trying out Git')
 
     return {
         init: init
