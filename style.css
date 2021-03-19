@@ -1,0 +1,94 @@
+
+body {
+    background-color: hsl(131, 20%, 50%);
+}
+
+
+.btn {
+    display: inline-block;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    border-radius: .25rem;
+    text-align: center;
+    margin: 10px;
+    font-family: 'Space Mono', Helvetica;
+}
+
+.players {
+    font-family: 'Space Mono', Helvetica;
+}
+
+.reset {
+    background-color: green;
+    border-radius: .25rem;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    position: relative;
+    top: 70px;
+    left: 0px;
+    font-family: 'Space Mono', Helvetica;
+}
+
+.scoreboard {
+    font-size: 2em;
+    font-family: 'Space Mono', Helvetica;
+}
+
+.message {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 5px;
+    font-size: 1.4em;
+    font-family: 'Space Mono', Helvetica;
+}
+
+.redCard {
+    color: red;
+}
+
+.bigArea {
+    font-size: 2em;
+    text-align: center;
+}
+
+.smallArea {
+    font-size: 1.2em;
+    vertical-align: top;
+    text-align: left;
+}
+
+.card {
+    display: inline-block;
+    margin: auto;
+    padding: 10px;
+    height: 120px;
+    width: 90px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.cardB {
+    position: absolute;
+    top: 135px;
+    left: 9px;
+    padding: 10px;
+    height: 120px;
+    width: 90px;
+    background-color: hsl(220, 60%, 50%);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.score {
+    display: block;
+    font-size: 2em;
+    margin: 15px 0;
+    font-family: 'Space Mono', Helvetica;
+}
